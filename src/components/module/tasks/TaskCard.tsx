@@ -35,7 +35,7 @@ const TaskCard = ({ task }: IProps) => {
                 "bg-red-500": task?.priority === "high",
               })}
             ></div>
-            <h1 className={task.isCompleted ? "line-through" : ""}>
+            <h1 className={` text-2xl ${task.isCompleted ? "line-through" : ""}`}>
               {task?.title}
             </h1>
           </div>
